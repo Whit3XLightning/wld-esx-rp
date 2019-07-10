@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
 			while true do
 				local pName = GetPlayerName(PlayerId())
 				local job = ESX.GetPlayerData().job.name
-				SetRichPresence(GetPlayerName(PlayerId()).." is roleplaying as a "..ESX.GetPlayerData().job.name.." with "..GetNumberOfPlayers().." other player(s).")
+				SetRichPresence(GetPlayerName(PlayerId()).." is roleplaying as a "..ESX.GetPlayerData().job.name.." with "..GetNumberOfPlayers()-1.." other player(s).")
 				Citizen.Wait(15*sec)
 			end
 		end)
